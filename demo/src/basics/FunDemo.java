@@ -6,7 +6,7 @@ public class FunDemo {
 		return n1 + n2;
 	}
 
-	public static int total(int...values, int v) {
+	public static int total(int...values) {
 		int sum = 0;
 		for (int n : values)
 			sum += n;
