@@ -1,9 +1,15 @@
 package oop;
 
+class Person {
+	public Person(String name) {
+		
+	}
+}
+
 public class TestPerson {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Person p1 = new Person("Abc");
 
 	}
 

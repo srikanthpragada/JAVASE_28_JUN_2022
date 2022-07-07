@@ -16,6 +16,7 @@ class Account {
 		System.out.println(acno);
 		System.out.println(ahname);
 		System.out.println(balance);
+	 
 	}
 	
 	public void deposit(double amount) {
