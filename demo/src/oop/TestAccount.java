@@ -7,20 +7,25 @@ class Account {
 	private double balance;
 	
 	// Constructor 
-	public Account(int no, String name) {
-		acno = no;
-		ahname = name;
+	public Account(int acno, String ahname) {
+		this.acno = acno;
+		this.ahname = ahname;
 	}
+	
+	public Account(int acno, String ahname, double balance) {
+		this(acno,ahname);  // call another constructor 
+		this.balance = balance;
+	}
+	
 	// Methods 
 	public void print() {
-		System.out.println(acno);
-		System.out.println(ahname);
-		System.out.println(balance);
-	 
+		System.out.println(this.acno);
+		System.out.println(this.ahname);
+		System.out.println(this.balance);
 	}
 	
 	public void deposit(double amount) {
-		balance += amount;
+		this.balance += amount;
 	}
 	
 	public void withdraw(double amount) {
@@ -40,10 +45,10 @@ public class TestAccount {
 		 a1.deposit(10000);
 		 a1.deposit(20000);
 		 a1.withdraw(5000);
-		 //a1.print(); 
+		 a1.print(); 
 	     System.out.println(a1.getBalance());
 		 
-		 Account a2 = new Account(2, "Larry"); 
+		 Account a2 = new Account(2, "Larry", 50000); 
 		 a2.print();
 		 
 
