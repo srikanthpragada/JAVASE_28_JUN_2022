@@ -38,8 +38,7 @@ public class TestStudent {
 		s1.pay(5000);
 		System.out.println(s1.getDue());
 		s1.print(); 
-		
-		new Student()
+		 
 
 	}
 

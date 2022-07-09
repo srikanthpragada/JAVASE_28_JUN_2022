@@ -6,6 +6,13 @@ class Account {
 	private String ahname;
 	private double balance;
 	
+	// Class variable or Static variable 
+	private static int minbal = 5000;
+	
+	public static int getMinbal() {
+		return minbal;
+	}
+	
 	// Constructor 
 	public Account(int acno, String ahname) {
 		this.acno = acno;
@@ -29,7 +36,8 @@ class Account {
 	}
 	
 	public void withdraw(double amount) {
-		balance -= amount;
+		if (this.balance - Account.minbal >= amount)
+		    this.balance -= amount;
 	}
 	
 	public double getBalance() {
@@ -39,6 +47,8 @@ class Account {
 
 public class TestAccount {
 	public static void main(String[] args) {
+		 System.out.println(Account.getMinbal());
+		 
 		 Account a1;  // object reference 
 		 
 		 a1 = new Account(1, "Marshall");
@@ -47,6 +57,8 @@ public class TestAccount {
 		 a1.withdraw(5000);
 		 a1.print(); 
 	     System.out.println(a1.getBalance());
+	     
+	     
 		 
 		 Account a2 = new Account(2, "Larry", 50000); 
 		 a2.print();
