@@ -1,6 +1,6 @@
 package oop;
 
-class Doctor {
+abstract class Doctor {
 	private String name, mobile, dept;
 
 	public Doctor(String name, String mobile, String dept) {
@@ -14,6 +14,9 @@ class Doctor {
 		System.out.println(this.mobile);
 		System.out.println(this.dept);
 	}
+	
+	public abstract int getPay();
+	 
 }
 
 class ResidentDoctor extends Doctor {
@@ -64,11 +67,13 @@ public class TestDoctor {
 		Doctor d = new ResidentDoctor
 				("Dr. Joe", "3939393933", "Ped", 300000);
 		d.print();  // Runtime polymorphism 
+		System.out.println(d.getPay()); // runtime poly
 		
      
 		d = new ConsultantDoctor
 				("Dr. Andy", "390392111", "Card", 10, 2000);
 		d.print(); 
+		System.out.println(d.getPay());  
 		
 		// Downcasting 
 		if (d instanceof ConsultantDoctor) {
