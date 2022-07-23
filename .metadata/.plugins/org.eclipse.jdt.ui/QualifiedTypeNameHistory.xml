@@ -7,4 +7,6 @@
     <fullyQualifiedTypeName name="hr.Employee"/>
     <fullyQualifiedTypeName name="assign.MyMathOperations"/>
     <fullyQualifiedTypeName name="assign.MathOperations"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
 </qualifiedTypeNameHistroy>
