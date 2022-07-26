@@ -38,6 +38,7 @@ class Account {
 	public void withdraw(double amount) {
 		if (this.balance - Account.minbal >= amount)
 		    this.balance -= amount;
+	
 	}
 	
 	public double getBalance() {

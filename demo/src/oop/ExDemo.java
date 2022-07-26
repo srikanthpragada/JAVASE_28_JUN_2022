@@ -6,7 +6,8 @@ public class ExDemo {
 		 
 		 Thread.sleep(1000);
 		 
-		 int v = Integer.parseInt("dkfjd");
+		 int v = Integer.parseInt("abc");
+		 
 
 	}
 
