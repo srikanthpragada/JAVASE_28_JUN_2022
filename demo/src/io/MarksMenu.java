@@ -17,7 +17,7 @@ public class MarksMenu {
 	}
 	public static void main(String[] args) throws FileNotFoundException {
 		RandomAccessFile raf = 
-				  new RandomAccessFile("d:\\classroom\\jan22\\marks.dat","rw");
+				  new RandomAccessFile("d:\\classroom\\jun28\\marks.dat","rw");
 		Scanner s = new Scanner(System.in);
 		while(true)
 		{
