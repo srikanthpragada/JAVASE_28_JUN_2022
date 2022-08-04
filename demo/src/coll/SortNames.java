@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class SortNames {
 
 	public static void main(String[] args) {
-		 ArrayList<String> al = new ArrayList<>();
+		 var al = new ArrayList<String>();
 		 
 		 al.add("Scott");
 		 al.add("Tom");
