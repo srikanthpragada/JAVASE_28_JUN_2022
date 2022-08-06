@@ -2,7 +2,8 @@ package coll;
 
 import java.util.TreeSet;
 
-class Point implements Comparable<Point> {
+class Point implements Comparable<Point> 
+{
 	private int x,y;
 	public Point(int x, int y) {
 		this.x  = x;
@@ -14,13 +15,14 @@ class Point implements Comparable<Point> {
 	}
 	@Override
 	public int hashCode() {
-		return x * y;
+		return x;
 	}
 	@Override
 	public boolean equals(Object obj) {
 		Point other = (Point) obj;
 		return this.x == other.x && this.y == other.y;
 	}
+	
 	@Override
 	public int compareTo(Point other) {
 	    return  (this.x * this.y) - (other.x * other.y);
@@ -35,7 +37,7 @@ public class TestHashSet {
 		 points.add( new Point(1,2));
 		 points.add( new Point(10,20));
 		 points.add( new Point(11,12));
-		 points.add( new Point(10,10));
+		 points.add( new Point(10,20));
 		 
 		 for(Point p : points)
 			 System.out.println(p);

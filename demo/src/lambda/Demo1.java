@@ -13,8 +13,18 @@ public class Demo1 {
              System.out.println(i);
 	}
 	public static void main(String[] args) {
+  		 //  Implement interface using class 
          Thread t1  = new Thread(new Task());
          t1.start();
+         
+         // Implement interface using anonymous inner class
+         Thread ta  = new Thread(new Runnable() { 
+        	  public void run() {
+        		 System.out.println("Anonymous inner class ");
+        	 }
+         });
+         ta.start();
+         
          
          // Lambda Expression 
          Thread t2 = new Thread( () -> System.out.println("Lambda Thread!"));
